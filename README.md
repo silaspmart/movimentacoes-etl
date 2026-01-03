@@ -1,4 +1,4 @@
-# ✈️ Movimentações Aeroportuárias — ETL em Java & Power BI
+# ✈️ Movimentações Aeroportuárias - ETL em Java & Power BI
 
 Projeto de **ETL em Java** para tratamento de dados de movimentações aeroportuárias, com saída analítica em **modelo estrela** para consumo no **Power BI**.
 
