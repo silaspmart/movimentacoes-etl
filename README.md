@@ -46,32 +46,28 @@ Este projeto demonstra como um processo ETL pode:
 
 ---
 
-## 📁 Estrutura do projeto
+## Estrutura do projeto
 
-mindmap
-  root((movimentacoes-etl))
-    data
-      Dim_Aeroporto.csv
-      Fato_Movimentacoes.csv
-      Movimentacoes.pdf
-    src
-      main
-        java
-          model
-            Aeroporto.java
-            FatoMovimentacao.java
-          reader
-            CsvMovimentacoesReader.java
-          repository
-            DimAeroportoRepository.java
-          service
-            AeroportoService.java
-            FatoMovimentacaoService.java
-          writer
-            CsvAeroportoWriter.java
-            CsvFatoMovimentacoesWriter.java
-          Main.java
-    README.md
+```text
+movimentacoes-etl/
+│
+├── data/
+│   ├── Dim_Aeroporto.csv
+│   ├── Fato_Movimentacoes.csv
+│   └── Movimentacoes.pdf
+│
+├── src/
+│   └── main/
+│       └── java/
+│           ├── model/
+│           ├── reader/
+│           ├── repository/
+│           ├── service/
+│           ├── writer/
+│           └── Main.java
+│
+└── README.md
+```
 
 ---
 
