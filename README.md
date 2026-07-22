@@ -32,51 +32,41 @@ Este projeto demonstra como um processo ETL pode:
 
 ---
 
-# Fluxo do Processo
+## Fluxo do processo
 
-Dados Operacionais (ANAC)
-            │
-            ▼
-Leitura dos arquivos CSV
-            │
-            ▼
-Tratamento e padronização
-            │
-            ▼
-Identificação dos aeroportos únicos
-            │
-            ▼
-Geração da Dim_Aeroporto
-            │
-            ▼
-Relacionamento das chaves
-            │
-            ▼
-Geração da Fato_Movimentacoes
-            │
-            ▼
-Power BI
+| Etapa | Descrição |
+|-------|-----------|
+| 📥 Entrada | Dados operacionais da ANAC |
+| 📖 Leitura | Importação do arquivo CSV |
+| 🧹 Tratamento | Padronização e limpeza dos dados |
+| ✈️ Dimensão | Identificação dos aeroportos únicos e geração da `Dim_Aeroporto` |
+| 🔗 Relacionamento | Associação das chaves de origem e destino |
+| 📊 Fato | Geração da tabela `Fato_Movimentacoes` |
+| 📈 Visualização | Consumo dos arquivos no Power BI |
 
 ---
 
-# Estrutura do Projeto
+## Estrutura do projeto
 
-movimentacoes-etl
+movimentacoes-etl/
 │
-├── data
+├── data/
 │   ├── Dim_Aeroporto.csv
 │   ├── Fato_Movimentacoes.csv
 │   └── Movimentacoes.pdf
 │
-├── src/main/java
-│   ├── model
-│   ├── reader
-│   ├── repository
-│   ├── service
-│   ├── writer
-│   └── Main.java
+├── src/
+│   └── main/
+│       └── java/
+│           ├── model/
+│           ├── reader/
+│           ├── repository/
+│           ├── service/
+│           ├── writer/
+│           └── Main.java
 │
 └── README.md
+```
 
 ---
 
